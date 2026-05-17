@@ -772,13 +772,16 @@ Stronger phone/tablet usability
 	}
 
 	.navbar ul.linklist {
-		align-items: stretch;
-		display: grid;
-		gap: 4px;
-		grid-template-columns: repeat(2, minmax(0, 1fr));
+		align-items: center;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 3px 6px;
+		justify-content: flex-start;
+		padding: 0;
 	}
 
 	.navbar ul.linklist > li {
+		border-bottom: 0;
 		float: none;
 		line-height: 1.25;
 		min-height: 0;
@@ -787,10 +790,41 @@ Stronger phone/tablet usability
 
 	.navbar a {
 		box-sizing: border-box;
-		justify-content: center;
-		min-height: 40px;
+		justify-content: flex-start;
+		min-height: 0;
+		padding: 5px 6px;
 		text-align: center;
-		width: 100%;
+		width: auto;
+	}
+
+	.navbar a .icon {
+		margin-right: 2px;
+	}
+
+	#nav-main {
+		border-bottom: 1px solid #303030;
+		margin-bottom: 5px;
+		padding-bottom: 5px;
+	}
+
+	#nav-breadcrumbs {
+		font-size: 0.95em;
+	}
+
+	#nav-breadcrumbs .breadcrumbs {
+		flex: 1 1 auto;
+		min-width: 0;
+	}
+
+	#nav-breadcrumbs .crumb {
+		display: inline-block;
+		margin-right: 4px;
+	}
+
+	.header-profile .header-avatar img {
+		max-height: 18px;
+		max-width: 18px;
+		vertical-align: text-bottom;
 	}
 
 	ul.topiclist li.header dt {
@@ -1024,19 +1058,41 @@ Stronger phone/tablet usability
 	}
 
 	.headerbar {
-		padding: 10px 8px;
+		padding: 8px;
 	}
 
 	.site-description h1 {
-		font-size: 1.35em;
+		font-size: 1.28em;
 	}
 
 	.site-description p {
-		font-size: 0.9em;
+		font-size: 0.88em;
+		margin-top: 2px;
+	}
+
+	.search-header {
+		margin-top: 2px;
+	}
+
+	.search-box .inputbox {
+		height: 36px;
+	}
+
+	.button,
+	a.button1,
+	input.button1,
+	input.button3,
+	a.button2,
+	input.button2,
+	.button-search,
+	.button-search-end {
+		min-height: 36px;
+		padding-bottom: 6px;
+		padding-top: 6px;
 	}
 
 	.navbar ul.linklist {
-		grid-template-columns: 1fr;
+		gap: 2px 4px;
 	}
 
 	ul.topiclist dt .list-inner {
