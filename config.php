@@ -7,9 +7,7 @@ $dbuser = 'root';
 $dbpasswd = 'IHSvJPjdwOjBIySQVtfZmJStzSvjhCfG';
 $table_prefix = 'phpbb_';
 
-$cookie_domain = 'dvebb.up.railway.app';
-$server_name = 'dvebb.up.railway.app';
-$server_port = 443;
-$script_path = '';
+$phpbb_adm_relative_path = 'adm/';
+$acm_type = 'phpbb\\cache\\driver\\file';
 
 @define('PHPBB_INSTALLED', true);
