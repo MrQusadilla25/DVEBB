@@ -1,0 +1,87 @@
+/* Birthday message */
+.birthdaymessage {
+	margin: 10px 0;
+	padding: 10px;
+	text-align: center;
+	border: 3px solid #d4af37;
+	border-radius: 6px;
+	background: linear-gradient(
+		180deg,
+		#fff9e6 0%,
+		#f2f2f2 100%
+	);
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.15);
+}
+.birthdaymessage-inner {
+	display: inline-block;
+}
+.birthday-line {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+}
+/* Text & emoji */
+.birthday-title,
+.birthday-subtitle {
+	display: block;
+	opacity: 0;
+	animation: birthdayFadeIn 0.8s ease-out forwards;
+}
+.birthday-title {
+	font-size: 1.8em;
+	font-weight: bold;
+	color: #8b6b00;
+	text-shadow: 0 1px 0 #fff;
+}
+.birthday-subtitle {
+	margin-top: 4px;
+	font-size: 1.2em;
+	font-style: italic;
+	color: #555;
+	animation-delay: 0.25s;
+}
+.birthday-text {
+	line-height: 1;
+	position: relative;
+	top: 0.18em;
+}
+.birthday-emoji {
+	font-size: 1.5em;
+	line-height: 1;
+}
+/* Animation */
+@keyframes birthdayFadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(6px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+/* Dark mode */
+html.phpbb-dark-mode .birthdaymessage {
+	background: linear-gradient(
+		180deg,
+		#3a3300 0%,
+		#2b2b2b 100%
+	);
+	border-color: #bfa100;
+	box-shadow: inset 0 0 6px rgba(255, 215, 0, 0.15);
+}
+html.phpbb-dark-mode .birthday-title {
+	color: #ffd700;
+	text-shadow: none;
+}
+html.phpbb-dark-mode .birthday-subtitle {
+	color: #ddd;
+}
+@media (prefers-reduced-motion: reduce) {
+	.birthday-title,
+	.birthday-subtitle {
+		animation: none;
+		opacity: 1;
+		transform: none;
+	}
+}

@@ -1,0 +1,8 @@
+services:
+    stoker.membershipyears.listener:
+        class: stoker\membershipyears\event\main_listener
+        arguments:
+            - '@user'
+            - '@template'
+        tags:
+            - { name: event.listener }

@@ -1,0 +1,20 @@
+{% if S_USER_BIRTHDAY %}
+<div class="birthdaymessage">
+	<div class="birthdaymessage-inner">
+		<span class="birthday-title">
+			<span class="birthday-line">
+				<span class="birthday-emoji">🎂</span>
+				<span class="birthday-text">
+					{{ lang('BIRTHDAY_MESSAGE', USER_BIRTHDAY_FULL) }}
+				</span>
+				<span class="birthday-emoji">🎁</span>
+			</span>
+		</span>
+
+		<span class="birthday-subtitle">
+			{{ lang('BIRTHDAY_WISH', SITENAME) }}
+			<span class="birthday-emoji">🎉</span>
+		</span>
+	</div>
+</div>
+{% endif %}

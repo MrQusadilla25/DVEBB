@@ -1,0 +1,218 @@
+/* [hidden] Hidden Content (guest view) */
+
+/* Container */
+.hc-box {
+	background: #ffffff;
+	border: 1px solid rgba(120, 120, 120, 0.25);
+	border-radius: 12px;
+	margin: 1em 0;
+	padding: 20px;
+}
+
+/* Guest overlay */
+.hc-overlay {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 12px;
+}
+
+/* Lock icon */
+.hc-lock:before {
+	font-size: 1.5rem;
+	line-height: 1;
+	content: "\1F512"; /* lock glyph */
+}
+
+/* Overlay text */
+.hc-text {
+	display: grid;
+	max-width: 32rem;
+	gap: 6px;
+}
+
+.hc-text strong {
+	font-size: 1rem;
+}
+
+.hc-text span {
+	font-size: 0.9rem;
+	opacity: 0.85;
+}
+
+/* Buttons */
+.hc-actions {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 8px;
+	gap: 8px;
+}
+
+.hc-btn {
+	font-size: 0.9rem;
+	line-height: 1;
+	text-decoration: none;
+	border: 1px solid rgba(120, 120, 120, 0.35);
+	border-radius: 10px;
+	display: inline-block;
+	padding: 8px 12px;
+}
+
+.hc-btn--primary {
+	background: #4c7af1;
+	border-color: transparent;
+	color: #ffffff;
+}
+
+/* Member content styling */
+.hc-box--member .hc-content {
+	padding: 5px 0;
+}
+
+/* Member view header */
+.hc-header {
+	font-size: 0.85rem;
+	font-weight: 500;
+	border-bottom: 1px solid rgba(120, 120, 120, 0.2);
+	opacity: 0.85;
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+	padding-bottom: 4px;
+	gap: 6px;
+}
+
+.hc-box--member .hc-lock:before {
+	font-size: 1rem;
+	content: "\1F512"; /* lock glyph */
+}
+
+/* [spoil] spoiler BBCode */
+.spoilbtn:hover {
+	color: #d31141 !important;
+}
+
+/* [fade] fade text in/out effect */
+.fadeEffect {
+	-moz-animation: fade 2s infinite;
+	-webkit-animation: fade 2s infinite;
+	animation: fade 2s infinite;
+}
+
+@-webkit-keyframes fade {
+	50% {
+		opacity: 0;
+	}
+}
+
+@keyframes fade {
+	50% {
+		opacity: 0;
+	}
+}
+
+/* video player styling */
+.auto-video {
+	max-width: 100%;
+}
+
+/* Pipe Table styling */
+.pipe-table {
+	margin-bottom: 0.813rem;
+}
+
+.pipe-table th,
+.pipe-table td {
+	padding: 0 12px;
+}
+
+.pipe-table th {
+	background-color: #0076b1;
+	color: #ffffff;
+}
+
+.pipe-table tr:hover {
+	background-color: #f5f5f5;
+}
+
+/* Marquee styling */
+.abbc3-marquee {
+	overflow: hidden;
+}
+
+.abbc3-marquee-left {
+	text-align: center;
+	-webkit-transform: translateX(100%);
+	-moz-transform: translateX(100%);
+	transform: translateX(100%);
+	-webkit-animation: marquee-x 10s linear normal infinite;
+	-moz-animation: marquee-x 10s linear normal infinite;
+	animation: marquee-x 10s linear normal infinite;
+}
+
+.abbc3-marquee-right {
+	text-align: center;
+	-webkit-transform: translateX(-100%);
+	-moz-transform: translateX(-100%);
+	transform: translateX(-100%);
+	-webkit-animation: marquee-x 10s linear reverse infinite;
+	-moz-animation: marquee-x 10s linear reverse infinite;
+	animation: marquee-x 10s linear reverse infinite;
+}
+
+.abbc3-marquee-up {
+	height: 20em;
+	-webkit-transform: translateY(100%);
+	-moz-transform: translateY(100%);
+	transform: translateY(100%);
+	-webkit-animation: marquee-y 5s linear normal infinite;
+	-moz-animation: marquee-y 5s linear normal infinite;
+	animation: marquee-y 5s linear normal infinite;
+}
+
+.abbc3-marquee-down {
+	height: 20em;
+	-webkit-transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	transform: translateY(-100%);
+	-webkit-animation: marquee-y 5s linear reverse infinite;
+	-moz-animation: marquee-y 5s linear reverse infinite;
+	animation: marquee-y 5s linear reverse infinite;
+}
+
+@keyframes marquee-x {
+	0% {
+		-webkit-transform: translateX(100%);
+		-moz-transform: translateX(100%);
+		transform: translateX(100%);
+	}
+
+	100% {
+		-webkit-transform: translateX(-100%);
+		-moz-transform: translateX(-100%);
+		transform: translateX(-100%);
+	}
+}
+
+@keyframes marquee-y {
+	0% {
+		-webkit-transform: translateY(100%);
+		-moz-transform: translateY(100%);
+		transform: translateY(100%);
+	}
+
+	100% {
+		-webkit-transform: translateY(-100%);
+		-moz-transform: translateY(-100%);
+		transform: translateY(-100%);
+	}
+}
+
+/* Stoker Dark mode tweaks */
+.phpbb-dark-mode .hc-box,
+.phpbb-dark-mode .abbc3-spoiler {
+	background: rgba(255, 255, 255, 0.05) !important;
+	border-color: rgba(255, 255, 255, 0.12) !important;
+}

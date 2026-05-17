@@ -1,0 +1,9 @@
+services:
+    stoker.birthdaymessage.listener:
+        class: stoker\birthdaymessage\event\main_listener
+        arguments:
+            - '@language'
+            - '@template'
+            - '@user'
+        tags:
+            - { name: event.listener }
