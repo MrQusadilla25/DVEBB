@@ -983,53 +983,53 @@ fieldset.quick-login input.inputbox {
 /* Input field styles
 ---------------------------------------- */
 textarea {
-	color: #CCCCCC;
+	color: #FFFFFF;
     background-color: #0f0f0f;
-    border: 1px solid #0a0a0a;
+	border: 1px solid #555555;
     border-radius: 2px;
     outline: 0;
 	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
 textarea:hover {
-	border: 1px solid #0a0a0a;
-	background-color: #1a1a1a;
+	border: 1px solid #888888;
+	background-color: #2a2a2a;
 	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
 textarea:focus {
-	border: 1px solid #0a0a0a;
-	background-color: #1a1a1a;
+	border: 1px solid #CCCCCC;
+	background-color: #2a2a2a;
 	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
 .inputbox {
-	color: #CCCCCC;
+	color: #FFFFFF;
     background-color: #1a1a1a;
-    border: 1px solid #0a0a0a;
+	border: 1px solid #555555;
     border-radius: 2px;
     outline: 0;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
 .inputbox:-moz-placeholder {
-	color: #CCCCCC;
+	color: #888888;
 }
 
 .inputbox::-webkit-input-placeholder {
-	color: #CCCCCC;
+	color: #888888;
 }
 
 .inputbox:hover {
 	color: #FFFFFF;
-	border: 1px solid #0a0a0a;
+	border: 1px solid #888888;
 	background-color: #2a2a2a;
 	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
 .inputbox:focus {
 	color: #FFFFFF;
-	border: 1px solid #0a0a0a;
+	border: 1px solid #CCCCCC;
 	background-color: #2a2a2a;
 	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
