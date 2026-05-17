@@ -560,3 +560,347 @@
 		width: 80px;
 	}
 }
+
+/* Enhanced Mobile Optimization
+---------------------------------------- */
+
+@media (max-width: 768px) {
+	/* Touch-friendly button sizes (min 44px for tap targets) */
+	.button, 
+	input[type="submit"], 
+	input[type="button"], 
+	input[type="reset"],
+	a.button1, 
+	input.button1, 
+	a.button2, 
+	input.button2, 
+	input.button3 {
+		min-height: 44px;
+		padding: 8px 12px;
+		font-size: 16px;
+		line-height: 1.5;
+		min-width: 44px;
+	}
+
+	/* Better form field visibility and touch targets */
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	input[type="search"],
+	input[type="url"],
+	input[type="number"],
+	input[type="date"],
+	input[type="time"],
+	select,
+	textarea,
+	.inputbox {
+		font-size: 16px; /* Prevents auto-zoom on iOS */
+		padding: 8px 10px;
+		min-height: 44px;
+		width: 100%;
+		max-width: 100%;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	textarea {
+		min-height: 120px;
+		line-height: 1.4;
+	}
+
+	/* Improve form spacing */
+	fieldset dl,
+	fieldset.fields1 dl,
+	fieldset.fields2 dl {
+		margin-bottom: 15px;
+	}
+
+	fieldset dt {
+		margin-bottom: 5px;
+		font-size: 1.1em;
+	}
+
+	fieldset dd {
+		margin-bottom: 10px;
+	}
+
+	fieldset dd label {
+		display: block;
+		margin-bottom: 5px;
+	}
+
+	/* Better link/button spacing */
+	a {
+		-webkit-touch-callout: none;
+	}
+
+	/* Navigation improvements */
+	.navbar ul {
+		padding: 5px 0;
+	}
+
+	.navbar li {
+		padding: 5px 10px;
+		min-height: 44px;
+		display: flex;
+		align-items: center;
+	}
+
+	.navbar a {
+		display: block;
+		padding: 5px;
+		font-size: 1.05em;
+	}
+
+	/* Improve readability */
+	body {
+		font-size: 13px;
+		line-height: 1.5;
+	}
+
+	p {
+		margin-bottom: 1em;
+		line-height: 1.5;
+	}
+
+	h2 {
+		font-size: 1.5em;
+		margin: 0.8em 0 0.4em 0;
+	}
+
+	h3 {
+		font-size: 1.1em;
+		margin: 0.8em 0 0.3em 0;
+	}
+
+	/* Better spacing in lists */
+	.topiclist li,
+	ul.zebra-list li,
+	table.responsive tr {
+		padding: 8px 5px;
+		min-height: 44px;
+	}
+
+	/* Improve checkbox/radio sizing */
+	input[type="checkbox"],
+	input[type="radio"] {
+		width: 18px;
+		height: 18px;
+		margin: 5px;
+		cursor: pointer;
+	}
+
+	label input[type="checkbox"],
+	label input[type="radio"] {
+		margin-right: 8px;
+	}
+
+	/* Better dropdown visibility */
+	.dropdown-contents {
+		padding: 5px 0;
+	}
+
+	.dropdown-contents a,
+	.dropdown-contents li {
+		padding: 10px 15px;
+		display: block;
+		min-height: 44px;
+		line-height: 24px;
+	}
+
+	/* Registration/login form improvements */
+	.phpbb_alert {
+		padding: 10px;
+		margin: 10px 0;
+		font-size: 1.05em;
+		line-height: 1.4;
+	}
+
+	fieldset.quick-login {
+		padding: 10px;
+	}
+
+	fieldset.quick-login input.inputbox {
+		width: 100%;
+		margin: 8px 0;
+	}
+
+	fieldset.quick-login label {
+		display: block;
+		margin: 8px 0;
+		font-size: 1.05em;
+	}
+
+	/* Captcha improvements */
+	.captcha-panel {
+		padding: 10px;
+	}
+
+	.captcha-panel dd.captcha-image img {
+		max-width: 100%;
+		height: auto;
+		display: block;
+	}
+
+	/* Message improvements */
+	.postbody {
+		padding: 8px;
+		line-height: 1.5;
+		word-wrap: break-word;
+	}
+
+	/* Better table readability */
+	table {
+		font-size: 0.95em;
+	}
+
+	table td, table th {
+		padding: 8px;
+	}
+
+	/* Improve post metadata visibility */
+	.post-info {
+		padding: 8px 0;
+		margin: 8px 0;
+		border-top: 1px solid #333;
+	}
+
+	/* Action bar improvements */
+	.action-bar {
+		padding: 10px 5px;
+		margin: 10px 0;
+	}
+
+	.action-bar > div {
+		margin-bottom: 8px;
+	}
+
+	/* Search improvements */
+	.search-box {
+		padding: 8px;
+	}
+
+	.search-box .inputbox {
+		padding: 8px;
+	}
+
+	/* Better visibility for error/success messages */
+	.phpbb_alert {
+		border-width: 2px;
+		border-radius: 4px;
+		padding: 12px;
+		margin: 12px 0;
+	}
+
+	/* Improve notification visibility */
+	.notification {
+		padding: 10px;
+		margin: 8px 0;
+		min-height: 44px;
+		display: flex;
+		align-items: center;
+	}
+}
+
+/* Large mobile devices (tablets) */
+@media (min-width: 481px) and (max-width: 768px) {
+	body {
+		font-size: 14px;
+	}
+
+	.button, 
+	input[type="submit"], 
+	a.button1, 
+	input.button1 {
+		min-height: 40px;
+		padding: 6px 12px;
+	}
+
+	input[type="text"],
+	input[type="password"],
+	select,
+	textarea {
+		min-height: 40px;
+	}
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+	body {
+		font-size: 12px;
+		padding: 5px 0;
+	}
+
+	.wrap {
+		padding: 0 3px;
+	}
+
+	/* Single column layout */
+	.column1, .column2 {
+		width: 100%;
+		float: none;
+		margin: 0;
+	}
+
+	/* Ensure full-width forms */
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	select,
+	textarea {
+		width: 100%;
+	}
+
+	/* Improve button accessibility on tiny screens */
+	.button-bar {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 5px;
+	}
+
+	.button-bar .button {
+		flex: 1;
+		min-width: 80px;
+	}
+
+	/* Improve navigation on small screens */
+	.navbar {
+		padding: 0;
+	}
+
+	.navbar ul {
+		padding: 0;
+	}
+
+	.navbar li {
+		padding: 0;
+		border-bottom: 1px solid #333;
+	}
+
+	.navbar a {
+		padding: 12px 10px;
+		font-size: 1em;
+	}
+
+	/* Better heading sizing */
+	h1 {
+		font-size: 1.5em;
+		margin: 10px 0;
+	}
+
+	h2 {
+		font-size: 1.2em;
+		margin: 0.6em 0 0.3em 0;
+	}
+
+	/* Improve form readability */
+	fieldset dt label {
+		font-size: 1em;
+		font-weight: bold;
+	}
+
+	.postprofile .avatar {
+		max-height: 40px;
+		margin-right: 5px;
+	}
+}

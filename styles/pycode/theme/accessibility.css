@@ -1,0 +1,618 @@
+/* PyCode Theme - Accessibility & Usability Improvements
+   ============================================================ */
+
+/* This stylesheet provides additional accessibility and usability improvements
+   for the PyCode theme to ensure better readability and contrast across the forum */
+
+/* Focus States - Better keyboard navigation visibility
+   ============================================================ */
+*:focus {
+	outline: 2px solid #5a7a9e;
+	outline-offset: 2px;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus,
+a.button:focus {
+	outline: 2px solid #5a7a9e;
+	outline-offset: 2px;
+}
+
+/* Skip Links for Accessibility
+   ============================================================ */
+.skip-link {
+	position: absolute;
+	top: -40px;
+	left: 0;
+	background: #5a7a9e;
+	color: white;
+	padding: 8px;
+	text-decoration: none;
+	z-index: 100;
+	border-radius: 0 0 4px 0;
+}
+
+.skip-link:focus {
+	top: 0;
+	outline-offset: -2px;
+}
+
+/* Link Underlines for Better Identification
+   ============================================================ */
+a {
+	text-decoration: underline;
+	transition: all 0.2s ease;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* Don't underline images in links */
+a img {
+	text-decoration: none;
+}
+
+/* Improved Text Contrast & Readability
+   ============================================================ */
+body {
+	color: #e8e8e8;
+	background-color: #000000;
+	line-height: 1.6;
+	letter-spacing: 0.3px;
+}
+
+p, li, td, dd {
+	color: #e8e8e8;
+	line-height: 1.6;
+}
+
+/* Improve heading contrast */
+h1, h2, h3, h4, h5, h6 {
+	color: #ffffff;
+	line-height: 1.3;
+	margin-bottom: 0.5em;
+	margin-top: 0.5em;
+}
+
+/* Improve label contrast for forms */
+label {
+	color: #ffffff;
+	font-weight: 500;
+	display: block;
+	margin-bottom: 4px;
+}
+
+label strong {
+	color: #ffffff;
+	font-weight: 600;
+}
+
+/* Required field indicators */
+label .req {
+	color: #ff6b6b;
+	font-weight: bold;
+	margin-left: 4px;
+	title: "This field is required";
+}
+
+/* Form Group Improvements
+   ============================================================ */
+.form-group {
+	margin-bottom: 20px;
+}
+
+.form-group label {
+	display: block;
+	margin-bottom: 8px;
+	font-weight: 500;
+	color: #ffffff;
+}
+
+.form-help {
+	display: block;
+	margin-top: 4px;
+	color: #aaaaaa;
+	font-size: 0.9em;
+	line-height: 1.4;
+}
+
+/* Error Messages - More Visible
+   ============================================================ */
+.error,
+.phpbb_alert.error,
+.alert-error {
+	background-color: #3d2020;
+	border: 2px solid #ff6b6b;
+	color: #ffb3b3;
+	padding: 12px;
+	margin: 12px 0;
+	border-radius: 4px;
+	line-height: 1.5;
+}
+
+.error strong,
+.alert-error strong {
+	color: #ffffff;
+	font-weight: 600;
+}
+
+/* Success Messages
+   ============================================================ */
+.success,
+.phpbb_alert.success,
+.alert-success {
+	background-color: #1f3a2f;
+	border: 2px solid #6fdf5d;
+	color: #b3ffb3;
+	padding: 12px;
+	margin: 12px 0;
+	border-radius: 4px;
+	line-height: 1.5;
+}
+
+.success strong,
+.alert-success strong {
+	color: #ffffff;
+	font-weight: 600;
+}
+
+/* Info Messages
+   ============================================================ */
+.info,
+.phpbb_alert.info,
+.alert-info {
+	background-color: #1f2d3a;
+	border: 2px solid #5a9ae0;
+	color: #a3d0ff;
+	padding: 12px;
+	margin: 12px 0;
+	border-radius: 4px;
+	line-height: 1.5;
+}
+
+.info strong,
+.alert-info strong {
+	color: #ffffff;
+	font-weight: 600;
+}
+
+/* Warning Messages
+   ============================================================ */
+.warning,
+.phpbb_alert.warning,
+.alert-warning {
+	background-color: #3a3020;
+	border: 2px solid #ffd700;
+	color: #ffe680;
+	padding: 12px;
+	margin: 12px 0;
+	border-radius: 4px;
+	line-height: 1.5;
+}
+
+.warning strong,
+.alert-warning strong {
+	color: #ffffff;
+	font-weight: 600;
+}
+
+/* Code Blocks - Better Readability
+   ============================================================ */
+code, pre {
+	background-color: #0f0f0f;
+	border: 1px solid #3a3a3a;
+	padding: 2px 6px;
+	border-radius: 3px;
+	color: #7fff7f;
+	font-family: 'Courier New', monospace;
+	font-size: 0.9em;
+	overflow-x: auto;
+}
+
+pre {
+	padding: 12px;
+	margin: 12px 0;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+/* Quote Blocks - Better Distinction
+   ============================================================ */
+blockquote {
+	background-color: #0f0f0f;
+	border-left: 4px solid #5a7a9e;
+	padding: 12px;
+	margin: 12px 0;
+	border-radius: 0 4px 4px 0;
+	color: #d0d0d0;
+	font-style: italic;
+	line-height: 1.6;
+}
+
+.quote-title {
+	font-weight: bold;
+	color: #5a7a9e;
+	margin-bottom: 8px;
+}
+
+/* Emphasis & Strong Text
+   ============================================================ */
+strong, b {
+	color: #ffffff;
+	font-weight: 600;
+}
+
+em, i {
+	font-style: italic;
+	color: #e8e8e8;
+}
+
+/* Better Table Contrast
+   ============================================================ */
+table {
+	border-collapse: collapse;
+	width: 100%;
+	margin: 12px 0;
+}
+
+table thead th {
+	background-color: #1a1a1a;
+	color: #ffffff;
+	padding: 10px;
+	border: 1px solid #4a4a4a;
+	font-weight: 600;
+	text-align: left;
+}
+
+table tbody td {
+	padding: 8px 10px;
+	border: 1px solid #3a3a3a;
+	color: #e8e8e8;
+}
+
+table tbody tr:hover {
+	background-color: #0f0f0f;
+}
+
+/* List Improvements
+   ============================================================ */
+ul, ol {
+	margin: 12px 0;
+	line-height: 1.8;
+}
+
+ul > li,
+ol > li {
+	margin-bottom: 6px;
+}
+
+ul > li::marker {
+	color: #5a7a9e;
+}
+
+ol > li::marker {
+	color: #5a7a9e;
+	font-weight: bold;
+}
+
+/* Definition Lists
+   ============================================================ */
+dl {
+	margin: 12px 0;
+}
+
+dt {
+	font-weight: 600;
+	color: #ffffff;
+	margin-top: 8px;
+}
+
+dd {
+	margin-left: 20px;
+	margin-bottom: 8px;
+	color: #e8e8e8;
+	line-height: 1.6;
+}
+
+/* Better Button Visibility & Focus
+   ============================================================ */
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+.button {
+	min-height: 44px;
+	padding: 8px 16px;
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+	border-radius: 4px;
+	transition: all 0.2s ease;
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+}
+
+button:active,
+input[type="button"]:active,
+input[type="submit"]:active,
+.button:active {
+	transform: scale(0.98);
+}
+
+/* Disabled button states */
+button:disabled,
+input[type="button"]:disabled,
+input[type="submit"]:disabled,
+.button:disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+}
+
+/* Link Button Improvements
+   ============================================================ */
+a.button {
+	display: inline-block;
+	line-height: 1.5;
+}
+
+a.button:visited {
+	color: #ffffff;
+}
+
+/* Navigation Link Improvements
+   ============================================================ */
+.navbar a {
+	padding: 8px 12px;
+	display: block;
+	line-height: 1.5;
+	color: #cccccc;
+	text-decoration: none;
+	transition: all 0.2s ease;
+}
+
+.navbar a:hover,
+.navbar a:focus {
+	background-color: #3a5578;
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+/* Badge/Label Visibility
+   ============================================================ */
+.badge, .label {
+	display: inline-block;
+	padding: 4px 8px;
+	border-radius: 4px;
+	font-size: 0.85em;
+	font-weight: 600;
+	white-space: nowrap;
+	background-color: #3a5578;
+	color: #ffffff;
+	line-height: 1.4;
+}
+
+/* Post Metadata
+   ============================================================ */
+.post-meta, .post-info {
+	color: #999999;
+	font-size: 0.95em;
+	line-height: 1.5;
+	margin: 8px 0;
+}
+
+/* User Info Block
+   ============================================================ */
+.postprofile {
+	color: #e8e8e8;
+	line-height: 1.6;
+}
+
+.postprofile dt,
+.postprofile dd {
+	color: #e8e8e8;
+	line-height: 1.6;
+}
+
+/* Post Content
+   ============================================================ */
+.postbody {
+	color: #e8e8e8;
+	line-height: 1.7;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+}
+
+/* Improved Link Colors in Post Content
+   ============================================================ */
+.post-content a,
+.postbody a {
+	color: #5a9ae0;
+	text-decoration: underline;
+}
+
+.post-content a:visited,
+.postbody a:visited {
+	color: #8080cc;
+}
+
+.post-content a:hover,
+.postbody a:hover {
+	color: #7ab5ff;
+	background-color: transparent;
+}
+
+/* Search Results Highlighting
+   ============================================================ */
+.highlight {
+	background-color: #3a5578;
+	color: #ffffff;
+	padding: 2px 4px;
+	border-radius: 2px;
+}
+
+/* Pagination Improvements
+   ============================================================ */
+.pagination {
+	margin: 12px 0;
+	line-height: 1.6;
+}
+
+.pagination li {
+	display: inline-block;
+	margin: 2px;
+}
+
+.pagination a,
+.pagination span {
+	display: inline-block;
+	padding: 6px 8px;
+	min-width: 32px;
+	text-align: center;
+	border-radius: 3px;
+	text-decoration: none;
+	color: #cccccc;
+	transition: all 0.2s ease;
+}
+
+.pagination a:hover {
+	background-color: #3a5578;
+	color: #ffffff;
+}
+
+.pagination .active a,
+.pagination .current {
+	background-color: #5a7a9e;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+/* Breadcrumbs - Better Contrast
+   ============================================================ */
+.breadcrumbs {
+	color: #999999;
+	margin: 8px 0;
+	line-height: 1.6;
+}
+
+.breadcrumbs a {
+	color: #5a9ae0;
+	text-decoration: underline;
+}
+
+.breadcrumbs a:hover {
+	color: #7ab5ff;
+}
+
+.breadcrumbs > li::before {
+	color: #666666;
+	content: "/";
+	margin: 0 6px;
+}
+
+/* Status Indicators
+   ============================================================ */
+.status-online {
+	background-color: #6fdf5d;
+	color: #000000;
+}
+
+.status-offline {
+	background-color: #666666;
+	color: #ffffff;
+}
+
+.status-busy {
+	background-color: #ff6b6b;
+	color: #ffffff;
+}
+
+/* Icons - Better Visibility
+   ============================================================ */
+.icon {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin-right: 4px;
+	vertical-align: middle;
+}
+
+/* Tooltips
+   ============================================================ */
+[title],
+.tooltip {
+	cursor: help;
+	border-bottom: 1px dotted #5a7a9e;
+}
+
+/* Print Styles for Better Readability
+   ============================================================ */
+@media print {
+	body {
+		background-color: #ffffff;
+		color: #000000;
+	}
+
+	a {
+		color: #0000cc;
+		text-decoration: underline;
+	}
+
+	.no-print {
+		display: none !important;
+	}
+}
+
+/* Reduce Motion for Accessibility
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+	}
+}
+
+/* High Contrast Mode Support
+   ============================================================ */
+@media (prefers-contrast: more) {
+	body {
+		color: #ffffff;
+	}
+
+	a {
+		color: #0080ff;
+		text-decoration: underline;
+	}
+
+	button,
+	input[type="button"],
+	input[type="submit"],
+	.button {
+		border: 2px solid #ffffff;
+	}
+
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	textarea,
+	select {
+		border: 2px solid #ffffff;
+	}
+}
+
+/* Dark Mode Optimizations (for dark mode system preference)
+   ============================================================ */
+@media (prefers-color-scheme: dark) {
+	/* Already dark, but ensure proper contrast */
+	body {
+		color: #e8e8e8;
+	}
+
+	a {
+		color: #5a9ae0;
+	}
+}
