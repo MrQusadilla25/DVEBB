@@ -1,0 +1,243 @@
+/*
+--------------------------------------------------------------
+PyCode absolute black and white theme override
+-------------------------------------------------------------- */
+
+html,
+body {
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.wrap,
+.headerbar,
+.forabg,
+.forumbg,
+.forumbg2,
+.navbar,
+.panel,
+.post,
+.postprofile,
+.pm .postprofile,
+.bg1,
+.bg2,
+.bg3,
+ul.forums,
+table.table1 thead th,
+table.table1 tbody th,
+.tabs .tab > a,
+.minitabs .tab > a,
+.jumpbox-cat-link,
+.jumpbox-forum-link,
+.jumpbox-sub-link,
+.dropdown .dropdown-contents,
+.dropdown-extended .header,
+.phpbb_alert,
+blockquote,
+blockquote blockquote,
+blockquote blockquote blockquote,
+.codebox,
+.attachbox,
+.pm-message .attachbox,
+div.rules,
+p.post-notice,
+dl.thumbnail img,
+.search-box .inputbox,
+.gallery label,
+textarea,
+.inputbox,
+select {
+	background-color: #000000;
+	background-image: none;
+	color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+.content,
+.postbody,
+.postprofile,
+.panel,
+.copyright,
+table.table1 td,
+dl.details dt,
+dl.details dd,
+li.row strong,
+.postprofile,
+.postprofile strong,
+.attachbox p,
+.attachbox p.stats,
+dl.file dd,
+dl.thumbnail dd,
+fieldset.polls dl,
+fieldset.polls dl.voted,
+fieldset.polls dd div,
+.notification_list p.notification-time,
+label,
+dd label,
+.inputbox,
+textarea,
+select {
+	color: #ffffff;
+}
+
+a,
+.post h3 a,
+.post:target h3 a,
+.post h3 a.first-unread,
+.top i,
+table.info tbody th,
+.tabs .tab > a,
+.minitabs .tab > a,
+.pagination li a,
+.pagination li.ellipsis span {
+	color: #ffffff;
+}
+
+a:hover,
+.post h3 a:hover,
+.tabs .tab > a:hover,
+.minitabs .tab > a:hover,
+.jumpbox-cat-link:hover,
+.jumpbox-forum-link:hover,
+.jumpbox-sub-link:hover {
+	color: #000000;
+	background-color: #ffffff;
+	text-decoration: none;
+}
+
+.headerbar,
+.forabg,
+.forumbg,
+.forumbg2,
+.panel,
+.post,
+.navbar,
+ul.forums,
+ul.navlinks,
+ul.topiclist li,
+ul.topiclist dd,
+table.table1 tbody tr,
+table.table1 tbody td,
+table.table1 tbody th,
+.content h2,
+.panel h2,
+h3,
+hr,
+.signature,
+.notice,
+blockquote,
+.codebox,
+.codebox p,
+.attachbox,
+.attachbox dd,
+fieldset.polls dl,
+.tabs .tab > a,
+.tabs .activetab > a,
+.minitabs .tab > a,
+.minitabs .activetab > a,
+.dropdown .dropdown-contents,
+.dropdown li,
+.dropdown li li,
+.dropdown li.separator,
+.dropdown-extended .footer,
+.jumpbox .dropdown li,
+.phpbb_alert,
+textarea,
+.inputbox,
+select {
+	border-color: #ffffff;
+	border-top-color: #ffffff;
+	border-right-color: #ffffff;
+	border-bottom-color: #ffffff;
+	border-left-color: #ffffff;
+}
+
+.bg1,
+.bg2,
+.bg3,
+table.zebra-list tr:nth-child(odd) td,
+table.zebra-list tr:nth-child(even) td,
+ul.zebra-list li:nth-child(odd),
+ul.zebra-list li:nth-child(even),
+.postprofile,
+.pm .postprofile,
+div.rules,
+p.post-notice,
+.gallery label:hover,
+.jumpbox-cat-link:hover,
+.jumpbox-forum-link:hover,
+.jumpbox-sub-link:hover,
+li.row:hover,
+li.row:hover dd,
+table.table1 tbody tr:hover,
+table.table1 tbody tr.hover,
+.dropdown-extended ul li:hover {
+	background-color: #000000;
+}
+
+.button,
+a.button1,
+input.button1,
+input.button3,
+a.button2,
+input.button2,
+.pagination li a,
+.pagination li.ellipsis span,
+.pagination li.active span,
+.tabs .activetab > a,
+.tabs .activetab > a:hover,
+.minitabs .activetab > a,
+.minitabs .activetab > a:hover {
+	background-color: #000000;
+	background-image: none;
+	border-color: #ffffff;
+	box-shadow: none;
+	color: #ffffff;
+	text-shadow: none;
+}
+
+.button:hover,
+.button:focus,
+a.button1:hover,
+input.button1:hover,
+a.button2:hover,
+input.button2:hover,
+input.button3:hover,
+.pagination li a:hover,
+.pagination li a:hover .icon,
+.pagination .dropdown-visible a.dropdown-trigger,
+.nojs .pagination .dropdown-container:hover a.dropdown-trigger {
+	background-color: #ffffff;
+	background-image: none;
+	border-color: #ffffff;
+	box-shadow: none;
+	color: #000000;
+	text-shadow: none;
+}
+
+.postlink,
+.postlink:visited {
+	background-color: transparent;
+	border-bottom-color: #ffffff;
+	color: #ffffff;
+}
+
+.postlink:hover {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.dropdown .pointer,
+.dropdown .pointer-inner,
+.dropdown-extended .pointer-inner,
+.jumpbox .dropdown .pointer-inner {
+	border-color: #ffffff transparent;
+}
+
+.button .icon,
+.button:hover .icon,
+.button:focus .icon {
+	color: inherit;
+}
