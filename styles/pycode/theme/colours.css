@@ -4,31 +4,26 @@ Colours and backgrounds for common.css
 -------------------------------------------------------------- */
 
 html, body {
-	color: #FFFFFF;
-	background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 50%, #0f1929 100%);
-	background-attachment: fixed;
-	min-height: 100vh;
+	color: rgb(193,193,199);
+	background-color: #0c0e0f;
 }
 
 h1 {
-	color: #FFFFFF;
-	text-shadow: 0 2px 8px rgba(0,0,0,0.4);
-	letter-spacing: 1px;
+	color: rgb(193,193,199);
 }
 
 h2 {
-	color: #00d9ff;
-	text-shadow: 0 1px 4px rgba(0,217,255,0.3);
+	color: rgb(193,193,199);
 }
 
 h3 {
-	border-bottom-color: #00d9ff;
-	color: #FFFFFF;
+	border-bottom-color: #3a3a3a;
+	color: rgb(193,193,199);
 }
 
 hr {
-	border-color: rgba(255,255,255, 0.3);
-	border-top-color: #555555;
+	border-color: rgba(183,183,189, 0.7);
+	border-top-color: #93959d;
 }
 
 /*
@@ -36,10 +31,10 @@ hr {
 Colours and backgrounds for links.css
 -------------------------------------------------------------- */
 
-a { color: #CCCCCC; }
+a { color: rgb(183,183,189); }
 a:hover { 
 	text-decoration: underline;
-	color: #FFFFFF; 
+	color: #dcdcdc; 
 }
 
 /* Links on gradient backgrounds */
@@ -58,18 +53,18 @@ a:hover {
 
 /* Post body links */
 .postlink {
-	border-bottom-color: #888888;
-	color: #888888;
+	border-bottom-color: #368AD2;
+	color: #368AD2;
 }
 
 .postlink:visited {
-	border-bottom-color: #666666;
-	color: #666666;
+	border-bottom-color: #5D8FBD;
+	color: #5D8FBD;
 }
 
 .postlink:hover {
-	background-color: #333333;
-	color: #FFFFFF;
+	background-color: #D0E4F6;
+	color: #0D4473;
 }
 
 .signature a, .signature a:hover {
@@ -89,86 +84,79 @@ a:hover {
 /* Round cornered boxes and backgrounds
 ---------------------------------------- */
 .wrap {
-	background-color: transparent;
-	box-shadow: none;
+	background-color: #2a2f34;
+}
+
+.headerbar {
+	color: #bdbdbd;
 }
 
 .headerbar, .forumbg {
-	background: linear-gradient(135deg, rgba(20,28,54,0.8) 0%, rgba(25,35,65,0.9) 100%);
-	backdrop-filter: blur(10px);
-	border: 1px solid rgba(0, 217, 255, 0.2);
-	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-	border-radius: 8px !important;
+	background-color: #42474F;
+	background-image: none;
 }
 
 .forumbg2 {
-	color: #FFFFFF;
-	background: linear-gradient(135deg, rgba(25,35,65,0.6) 0%, rgba(20,30,55,0.7) 100%);
-	border: 1px solid rgba(0, 217, 255, 0.15);
-	margin-bottom: 12px;
-    padding: 12px;
+	color: #bdbdbd;
+	background-color: #202225;
+	background-image: none;
+	margin-bottom: 4px;
+    padding: 5px;
     clear: both;
-    border-radius: 8px;
-	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
 }
 
 .forabg {
-	background: linear-gradient(135deg, rgba(20,28,54,0.8) 0%, rgba(25,35,65,0.9) 100%);
-	border: 1px solid rgba(0, 217, 255, 0.2);
-	border-radius: 8px;
-	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+	background-color: #202225;
+	background-image: none;
+	border-radius: 3px;
 }
 
 .navbar {
-	background: linear-gradient(90deg, rgba(30,40,70,0.95) 0%, rgba(35,50,85,0.9) 100%);
-	border-bottom: 2px solid rgba(0, 217, 255, 0.3);
-	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+	background-color: #42474F;
 }
 
 .panel {
-	background: linear-gradient(135deg, rgba(25,35,65,0.7) 0%, rgba(20,30,55,0.8) 100%);
-	border: 1px solid rgba(0, 217, 255, 0.2);
-	color: #FFFFFF;
-	border-radius: 8px;
-	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+	background-color: #43474F;
+	color: rgb(193,193,199);
 }
 
 .post:target .content {
-	color: #FFFFFF;
+	color: rgb(193,193,199);
 }
 
 .post h3 a.first-unread,
 
 .post:target h3 a {
-	color: #FFFFFF;
+	color: rgb(193,193,199);
 }
 
 .bg1 {
-	background-color: #1a1a1a;
+	background-color: #42474F;
 }
 
 table.zebra-list tr:nth-child(odd) td, ul.zebra-list li:nth-child(odd) {
-	background-color: #1a1a1a;
+	background-color: #42474f;
 }
 
 .bg2 {
-	background-color: #0f0f0f;
+	background-color: #41474F;
 }
 
 table.zebra-list tr:nth-child(even) td, ul.zebra-list li:nth-child(even) {
-	background-color: #2a2a2a;
+	background-color: #E1EBF2;
 }
 
 .bg3 {
-	background-color: #1a1a1a;
+	background-color: #42474F;
 }
 
 .ucprowbg {
-	background-color: #2a2a2a;
+	background-color: #DCDEE2;
 }
 
 .fieldsbg {
-	background-color: #2a2a2a;
+	background-color: #E7E8EA;
 }
 
 .site_logo {
@@ -179,18 +167,18 @@ table.zebra-list tr:nth-child(even) td, ul.zebra-list li:nth-child(even) {
 ----------------------------------------*/
 
 ul.navlinks {
-	border-top-color: rgba(255,255,255, 0.3);
+	border-top-color: rgba(183,183,189, 0.7);
 }
 
 /* Table styles
 ----------------------------------------*/
 table.table1 thead th {
-	color: #FFFFFF;
-	background-color: #1a1a1a;
+	color: rgb(183,183,189);
+	background-color: #42474F;
 }
 
 table.table1 tbody tr {
-	border-top-color: rgba(255,255,255, 0.2);
+	border-top-color: rgba(183,183,189, 0.7);
 }
 
 table.table1 tbody tr:hover, table.table1 tbody tr.hover {
@@ -198,34 +186,34 @@ table.table1 tbody tr:hover, table.table1 tbody tr.hover {
 }
 
 table.table1 td {
-	color: #FFFFFF;
+	color: rgb(183,183,189);
 }
 
 table.table1 tbody td {
-	border-top-color: #0a0a0a;
+	border-top-color: #2b2f34;
 }
 
 table.table1 tbody th {
-	border-top-color: #0a0a0a;
-	background-color: #1a1a1a;
+	border-top-color: #2b2f34;
+	background-color: #42474F;
 }
 
 table.info tbody th {
-	color: #FFFFFF;
+	color: #dcdcdc;
 }
 
 /* Misc layout styles
 ---------------------------------------- */
 dl.details dt {
-	color: #FFFFFF;
+	color: rgb(183, 183, 189);
 }
 
 dl.details dd {
-	color: #FFFFFF;
+	color: rgb(189, 189, 189);
 }
 
 .sep {
-	color: #777777;
+	color: #1198D9;
 }
 
 /* Icon styles
@@ -263,51 +251,51 @@ dl.details dd {
 }
 
 .alert_close .icon:before {
-	background-color: #FFFFFF;
+	background-color: #dcdcdc;
 }
 
 /* Jumpbox */
 .jumpbox .dropdown li {
-	border-top-color: #333333;
+	border-top-color: #33363a;
 }
 
 .jumpbox-cat-link {
-	background-color: #0a0a0a;
-    border-top-color: #0a0a0a;
-    color: #FFFFFF;
+	background-color: #242629;
+    border-top-color: #242629;
+    color: #bdbdbd;
 }
 
 .jumpbox-cat-link:hover {
-	background-color: #1a1a1a;
-	border-top-color:#0a0a0a;
-	color: #FFFFFF;
+	background-color: #2a2c2f;
+	border-top-color:#242629;
+	color: #dcdcdc;
 }
 
 .jumpbox-forum-link {
-	background-color: #1a1a1a;
+	background-color: #4d545b;
 }
 
 .jumpbox-forum-link:hover {
-	background-color: #2a2a2a;
+	background-color: #545a60;
 }
 
 .jumpbox .dropdown .pointer-inner {
-	border-color: #333333 transparent;
+	border-color: #33363a transparent;
 }
 
 .jumpbox-sub-link {
-	background-color: #1a1a1a;
+	background-color: #4d545b;
 }
 
 .jumpbox-sub-link:hover {
-	background-color: #2a2a2a;
+	background-color: #545a60;
 }
 
 /* Miscellaneous styles
 ---------------------------------------- */
 
 .copyright {
-	color: #FFFFFF;
+	color: rgb(193,193,199);
 }
 
 .error {
@@ -326,12 +314,12 @@ li.reported:hover {
 }
 
 div.rules {
-	background-color: #1a1a1a;
+	background-color: #41474F;
     color: #FFA307;
 }
 
 p.post-notice {
-	background-color: #2d1a25;
+	background-color: #582035;
 	background-image: none;
 }
 
@@ -341,18 +329,18 @@ Colours and backgrounds for content.css
 -------------------------------------------------------------- */
 
 ul.forums {
-	background-color: #1a1a1a; /* #353940; */ /* Old browsers */ /* FF3.6+ */
+	background-color: #42474F; /* #353940; */ /* Old browsers */ /* FF3.6+ */
 	background-image: none;
 	border-radius: 3px;
 }
 
 ul.topiclist li {
-	border-top-color: #0a0a0a;
+	border-top-color: #212225;
 }
 
 ul.topiclist dd {
 
-	border-left-color: rgba(255,255,255, 0.2);
+	border-left-color: rgba(183,183,189, 0.4);
 }
 
 .rtl ul.topiclist dd {
@@ -364,7 +352,7 @@ li.row {
 }
 
 li.row strong {
-	color: #FFFFFF;
+	color: #bdbdbd;
 }
 
 li.row:hover {
@@ -380,28 +368,28 @@ li.row:hover dd {
 }
 
 li.header dt, li.header dd {
-	color: #999999;
+	color: #828282;
 }
 
 /* Post body styles
 ----------------------------------------*/
 .postbody {
-	color: #FFFFFF;
+	color: rgb(193,193,199);
 }
 
 /* Content container styles
 ----------------------------------------*/
 .content {
-	color: #FFFFFF;
+	color: rgb(193,193,199);
 }
 
 .content h2, .panel h2 {
-	color: #FFFFFF;
-	border-bottom-color: rgba(255,255,255, 0.3);
+	color: rgb(193,193,199);
+	border-bottom-color: rgba(183,183,189, 0.7);
 }
 
 dl.faq dt {
-	color: #FFFFFF;
+	color: rgb(220, 220, 220);
 }
 
 .posthilit {
@@ -415,109 +403,109 @@ dl.faq dt {
 
 /* Post signature */
 .signature {
-	border-top-color: #555555;
+	border-top-color: #93959d;
 }
 
 /* Post noticies */
 .notice {
-	border-top-color:  #555555;
+	border-top-color:  #93959d;
 }
 
 /* BB Code styles
 ----------------------------------------*/
 /* Quote block */
 blockquote {
-	background-color: #1a1a1a;
-    border-color: #0a0a0a;
+	background-color: #4d545b;
+    border-color: #2c2d30;
     border-radius: 3px;
 }
 
 blockquote blockquote {
 	/* Nested quotes */
-	background-color: #2a2a2a;
-	color: #FFFFFF;
+	background-color: #687077;
+	color: #dcdcdc;
 }
 
 blockquote blockquote blockquote {
 	/* Nested quotes */
-	background-color: #1a1a1a;
+	background-color: #4d535b;
 }
 
 /* Code block */
 .codebox {
-	background-color: #0a0a0a;
-    border-color: #0a0a0a;
+	background-color: #2b2f34;
+    border-color: #212225;
     border-radius: 3px;
 }
 
 .codebox p {
-	border-bottom-color: #1a1a1a;
+	border-bottom-color: #42474f;
 }
 
 /* Attachments
 ----------------------------------------*/
 .attachbox {
-	background-color: #1a1a1a;
-    border-color: #0a0a0a;
+	background-color: #4d535b;
+    border-color: #2d2d30;
 }
 
 .pm-message .attachbox {
-	background-color: #1a1a1a;
+	background-color: #4d535b;
 }
 
 .attachbox dd {
-	border-top-color: #0a0a0a;
+	border-top-color: #2d2d30;
 }
 
 .attachbox p {
-	color: #FFFFFF;
+	color: #dcdcdc;
 }
 
 .attachbox p.stats {
-	color: #999999;
+	color: #bdbdbd;
 }
 
 .attach-image img {
-	border-color: #555555;
+	border-color: #999999;
 }
 
 /* Inline image thumbnails */
 
 dl.file dd {
-	color: #999999;
+	color: #bdbdbd;
 }
 
 dl.thumbnail img {
-	border-color: #333333;
-	background-color: #1a1a1a;
+	border-color: #666666;
+	background-color: #4d535b;
 }
 
 dl.thumbnail dd {
-	color: #999999;
+	color: #bdbdbd;
 }
 
 dl.thumbnail dt a:hover {
-	background-color: #2a2a2a;
+	background-color: #EEEEEE;
 }
 
 dl.thumbnail dt a:hover img {
-	border-color: #666666;
+	border-color: #368AD2;
 }
 
 /* Post poll styles
 ----------------------------------------*/
 
 fieldset.polls dl {
-	border-top-color: #0a0a0a;
-	color: #999999;
+	border-top-color: #2b2f34;
+	color: #bdbdbd;
 }
 
 fieldset.polls dl.voted {
-	color: #999999;
+	color: #bdbdbd;
 }
 
 fieldset.polls dd div {
-	color: #FFFFFF;
+	color: #dcdcdc;
 }
 
 .rtl .pollbar1, .rtl .pollbar2, .rtl .pollbar3, .rtl .pollbar4, .rtl .pollbar5 {
@@ -567,9 +555,9 @@ fieldset.polls dd div {
 /* Poster profile block
 ----------------------------------------*/
 .postprofile {
-	color: #FFFFFF;
-	background-color: #0f0f0f;
-    border: 1px solid #1a1a1a;
+	color: rgb(193,193,199);
+	background-color: rgb(68, 71, 79);
+    border: 1px solid rgb(43, 45, 48);
     border-radius: 4px;
 }
 
@@ -578,7 +566,7 @@ fieldset.polls dd div {
 }
 
 .postprofile strong {
-	color: #FFFFFF;
+	color: rgb(193,193,199);
 }
 
 .online {
@@ -595,43 +583,43 @@ dd.profile-warnings {
 Colours and backgrounds for buttons.css
 -------------------------------------------------------------- */
 .button {
-	color: #CCCCCC;
+	color: rgb(189, 189, 189);
     text-decoration: none;
-    background-color: #1a1a1a;
-    border-color: #0a0a0a;
+    background-color: #4E545C;
+    border-color: #202225;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
 .button:hover,
 .button:focus {
-	color: #FFFFFF;
+	color: rgb(220, 220, 220);
 	background-image: none;
-	background-color: #2a2a2a;
-    border-color: #0a0a0a;
+	background-color: #565d67;
+    border-color: #202225;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
 .button .icon,
 .button-secondary {
-	color: #CCCCCC;
+	color: rgb(183,183,189);
 }
 
 .button-secondary:focus,
 .button-secondary:hover,
 .button:focus .icon,
 .button:hover .icon {
-	color: #FFFFFF;
+	color: #dcdcdc;
 }
 
 .button-search:hover,
 .button-search-end:hover {
-	border-color: #0a0a0a;
+	border-color: #202225;
 }
 
-.caret	{ border-color: #555555; }
+.caret	{ border-color: #93959D; }
 
-.contact-icons a		{ border-color: #0a0a0a; }
-.contact-icons a:hover	{ background-color: #1a1a1a; }
+.contact-icons a		{ border-color: rgb(43,47,52); }
+.contact-icons a:hover	{ background-color: #3B3F44; }
 
 /* Pagination
 ---------------------------------------- */
@@ -645,19 +633,19 @@ Colours and backgrounds for buttons.css
 
 .pagination li.ellipsis span {
 	background: transparent;
-	color:	#999999;
+	color:	#bdbdbd;
 }
 
 .pagination li.active span {
-	background: #2a2a2a;
-	color: #FFFFFF;
+	background: #656E77;
+	color: #dcdcdc;
 	font-weight: bold;
 }
 
 .pagination li a:hover, .pagination li a:hover .icon, .pagination .dropdown-visible a.dropdown-trigger, .nojs .pagination .dropdown-container:hover a.dropdown-trigger {
-	background: #1a1a1a;
+	background: #626E77;
 	filter: none;
-	color: #FFFFFF;
+	color: #dcdcdc;
 	text-shadow: none;
 	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
@@ -668,16 +656,16 @@ Colours and backgrounds for buttons.css
 .search-box .inputbox,
 .search-box .inputbox:hover,
 .search-box .inputbox:focus {
-	background-color: #1a1a1a;
-    border-color: #0a0a0a;
+	background-color: #4E545C;
+    border-color: #202225;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
 .search-box .inputbox:hover,
 .search-box .inputbox:focus {
-	color: #FFFFFF;
-	background-color: #2a2a2a;
-    border-color: #0a0a0a;
+	color: #dcdcdc;
+	background-color: #565d67;
+    border-color: #202225;
     border-right: 0px;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
@@ -768,69 +756,69 @@ Colours and backgrounds for cp.css
 ----------------------------------------*/
 
 .panel-container h3, .panel-container hr, .cp-menu hr {
-	border-color: #0a0a0a;
+	border-color: #2A2F34;
 }
 
 .panel-container .panel li.row {
-	border-bottom-color: #0a0a0a;
-    border-top-color: #0a0a0a;
+	border-bottom-color: #2b2f34;
+    border-top-color: #2b2f34;
 }
 
 ul.cplist {
-	border-top-color: #0a0a0a;
+	border-top-color: #2b2f34;
 }
 
 .panel-container .panel li.header dd, .panel-container .panel li.header dt {
-	color: #CCCCCC;
+	color: rgb(189, 189, 189);
 }
 
 .panel-container table.table1 thead th {
-	color: #CCCCCC;
-	border-bottom-color: #0a0a0a;
+	color: rgb(189, 189, 189);
+	border-bottom-color: #333333;
 }
 
 .cp-main .pm-message {
-	border-color: #2a2a2a;
-	background-color: #0f0f0f;
+	border-color: #DBDEE2;
+	background-color: #FFFFFF;
 }
 
 /* CP tabbed menu
 ----------------------------------------*/
 .tabs .tab > a {
-	background: #1a1a1a;
-    color: #CCCCCC;
+	background: #41464D;
+    color: rgb(189, 189, 189);
 }
 
 .tabs .tab > a:hover {
-	background: #2a2a2a;
-    color: #FFFFFF;
+	background: #555a61;
+    color: rgb(220, 220, 220);
 }
 
 .tabs .activetab > a,
 .tabs .activetab > a:hover {
-	background-color: #1a1a1a; /* Old browsers */ /* FF3.6+ */
+	background-color: #41474F; /* Old browsers */ /* FF3.6+ */
 }
 
 .tabs .activetab > a:hover {
-	color: #FFFFFF;
+	color: rgb(220, 220, 220);
 }
 
 /* Mini tabbed menu used in MCP
 ----------------------------------------*/
 .minitabs .tab > a {
-	background-color: #2a2a2a;
+	background-color: #E1EBF2;
 }
 
 .minitabs .activetab > a,
 .minitabs .activetab > a:hover {
-	background-color: #1a1a1a;
-	color: #CCCCCC;
+	background-color: #F9F9F9;
+	color: #333333;
 }
 
 /* Responsive tabs
 ----------------------------------------*/
 .responsive-tab .responsive-tab-link:before {
-	border-color: #333333;
+	border-color: #536482;
 }
 
 .responsive-tab .responsive-tab-link:hover:before {
@@ -842,66 +830,66 @@ ul.cplist {
 
 /* Link styles for the sub-section links */
 .navigation a {
-	color: #CCCCCC;
-	background: #0f0f0f; /* Old browsers */ /* FF3.6+ */
+	color: rgb(189, 189, 189);
+	background: #353940; /* Old browsers */ /* FF3.6+ */
 }
 
 .rtl .navigation a {
-	background: #0f0f0f; /* Old browsers */ /* FF3.6+ */
+	background: #353940; /* Old browsers */ /* FF3.6+ */
 }
 
 .navigation a:hover {
-	background: #2a2a2a;
-    color: #FFFFFF;
-    border-left: 4px solid #0a0a0a;
+	background: #656E77;
+    color: rgb(220, 220, 220);
+    border-left: 4px solid #202225;
 }
 
 .navigation .active-subsection a {
-	background: #1a1a1a;
-    color: #CCCCCC;
-    border-left: 4px solid #0a0a0a;
+	background: #535A61;
+    color: rgb(189, 189, 189);
+    border-left: 4px solid #202225;
 }
 
 .navigation .active-subsection a:hover {
-	color: #FFFFFF;
-	background-color: #2a2a2a;
+	color: rgb(220, 220, 220);
+	background-color: #656E77;
 }
 
 @media only screen and (max-width: 900px), only screen and (max-device-width: 900px)
 {
 	#navigation a, .rtl #navigation a {
-		background: #0f0f0f;
+		background: #353940;
 	}
 }
 
 /* Preferences pane layout
 ----------------------------------------*/
 .panel-container h2 {
-	color: #CCCCCC;
+	color: rgb(189, 189, 189);
 }
 
 .panel-container .panel {
-	background-color: #1a1a1a;
+	background-color: #555a61;
 }
 
 .cp-main .pm {
-	background-color: #1a1a1a;
+	background-color: #545a60;
 }
 
 /* Friends list */
 .cp-mini {
-	background-color: #1a1a1a;
+	background-color: #545a60;
 }
 
 dl.mini dt {
-	color: #FFFFFF;
+	color: #dcdcdc;
 }
 
 /* PM Styles
 ----------------------------------------*/
 /* PM Message history */
 .current {
-	color: #FFFFFF !important;
+	color: #dcdcdc !important;
 }
 
 /* PM marking colours */
@@ -928,12 +916,12 @@ dl.mini dt {
 
 /* Avatar gallery */
 .gallery label {
-	background: #2a2a2a;
-	border-color: #333333;
+	background: #FFFFFF;
+	border-color: #CCC;
 }
 
 .gallery label:hover {
-	background-color: #1a1a1a;
+	background-color: #EEE;
 }
 
 /*
@@ -944,34 +932,13 @@ Colours and backgrounds for forms.css
 /* General form styles
 ----------------------------------------*/
 select {
-	border-color: #4a4a4a;
-    background-color: #252525;
-    color: #FFFFFF;
-	border: 2px solid #4a4a4a;
-	border-radius: 4px;
-	padding: 4px 6px;
-	transition: border-color 0.15s ease-in-out, background-color 0.15s ease-in-out;
-}
-
-select:hover {
-	border-color: #5a7a9e;
-	background-color: #2a2a2a;
-}
-
-select:focus {
-	border-color: #5a7a9e;
-	background-color: #2a2a2a;
-	box-shadow: inset 0 0 5px rgba(90, 122, 158, 0.5), 0 0 8px rgba(90, 122, 158, 0.3);
-	outline: none;
-}
-
-option {
-	background-color: #252525;
-	color: #FFFFFF;
+	border-color: #202225;
+    background-color: #2F3136;
+    color: rgb(189, 189, 189);
 }
 
 label {
-	color: #FFFFFF;
+	color: rgb(193,193,199);
 }
 
 option.disabled-option {
@@ -981,7 +948,7 @@ option.disabled-option {
 /* Definition list layout for forms
 ---------------------------------------- */
 dd label {
-	color: #FFFFFF;
+	color: rgb(193,193,199);
 }
 
 fieldset.fields1 {
@@ -1006,73 +973,68 @@ fieldset.quick-login input.inputbox {
 ----------------------------------------*/
 
 .message-box textarea {
-	color: #FFFFFF;
+	color: #dcdcdc;
 }
 
 .message-box textarea.drag-n-drop {
-	outline-color: rgba(255, 255, 255, 0.3);
+	outline-color: rgba(102, 102, 102, 0.5);
 }
 
 .message-box textarea.drag-n-drop-highlight {
-	outline-color: rgba(200, 200, 200, 0.5);
+	outline-color: rgba(17, 163, 234, 0.5);
 }
 
 /* Input field styles
 ---------------------------------------- */
 textarea {
-	color: #FFFFFF;
-    background-color: #252525;
-    border: 2px solid #4a4a4a;
-    border-radius: 4px;
+	color: rgb(189, 189, 189);
+    background-color: #2F3136;
+    border: 1px solid #202225;
+    border-radius: 2px;
     outline: 0;
 	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
 textarea:hover {
-	border: 2px solid #5a7a9e;
-	background-color: #2a2a2a;
-	box-shadow: inset 0 0 3px rgba(90, 122, 158, 0.3);
+	border: 1px solid #202225;
+	background-color: #35393E;
 	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
 textarea:focus {
-	color: #FFFFFF;
-	border: 2px solid #5a7a9e;
-	background-color: #2a2a2a;
-	box-shadow: inset 0 0 5px rgba(90, 122, 158, 0.5), 0 0 8px rgba(90, 122, 158, 0.3);
+	border: 1px solid #202225;
+	background-color: #35393E;
 	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
 .inputbox {
-	color: #FFFFFF;
-    background-color: #252525;
-    border: 2px solid #4a4a4a;
-    border-radius: 4px;
+	color: rgb(189, 189, 189);
+    background-color: #4E545C;
+    border: 1px solid #202225;
+    border-radius: 2px;
     outline: 0;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
 .inputbox:-moz-placeholder {
-	color: #999999;
+	color: rgb(183,183,189);
 }
 
 .inputbox::-webkit-input-placeholder {
-	color: #999999;
+	color: rgb(183,183,189);
 }
 
 .inputbox:hover {
-	color: #FFFFFF;
-	border: 2px solid #5a7a9e;
-	background-color: #2a2a2a;
-	box-shadow: inset 0 0 3px rgba(90, 122, 158, 0.3);
+	color: #dcdcdc;
+	border: 1px solid #202225;
+	background-color: #565d67;
 	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
 .inputbox:focus {
-	color: #FFFFFF;
-	border: 2px solid #5a7a9e;
-	background-color: #2a2a2a;
-	box-shadow: inset 0 0 5px rgba(90, 122, 158, 0.5), 0 0 8px rgba(90, 122, 158, 0.3);
+	color: #dcdcdc;
+	border: 1px solid #202225;
+	background-color: #565d67;
 	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
@@ -1090,16 +1052,15 @@ textarea:focus {
 
 a.button1, input.button1, input.button3, a.button2, input.button2 {
 	background-image: none;
-	color: #FFFFFF;
+	color: rgb(189, 189, 189);
     text-decoration: none;
-    background-color: #3a5578;
-    border-color: #2a4068;
-    border-width: 2px;
-    border-radius: 4px !important;
-    padding: 6px 10px 5px 10px;
-    font-weight: 600;
-    transition: all 0.2s ease-in-out;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    background-color: #4E545C;
+    border-color: #202225;
+    border-width: 1px 1px 4px 1px;
+    border-radius: 2px !important;
+    padding: 3px 5px 1px 5px;
+    font-weight: normal;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
 a.button1, input.button1 {
@@ -1122,38 +1083,28 @@ a.button1, a.button2 {
 
 /* Hover states */
 a.button1:hover, input.button1:hover, a.button2:hover, input.button2:hover, input.button3:hover {
-	color: #FFFFFF;
+	color: rgb(220, 220, 220);
 	background-image: none;
-	background-color: #4a6588;
-    border-color: #5a7a9e;
-	border-width: 2px;
-	transition: all 0.2s ease-in-out;
-	box-shadow: 0 3px 6px rgba(90, 122, 158, 0.5);
-	cursor: pointer;
+	background-color: #676e77;
+    border-color: #202225;
+	border-width: 1px 1px 4px 1px;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
 /* Focus states */
 input.button1:focus, input.button2:focus, input.button3:focus {
-	outline: none;
-	border-color: #5a7a9e;
-	box-shadow: 0 0 8px rgba(90, 122, 158, 0.7), inset 0 0 3px rgba(90, 122, 158, 0.5);
+
 }
 
 input.disabled {
 	color: #666666;
-	background-color: #1a1a1a;
-	border-color: #333333;
-	box-shadow: none;
-	cursor: not-allowed;
-	opacity: 0.6;
 }
 
 /* jQuery popups
 ---------------------------------------- */
 .phpbb_alert {
-	background-color: #252525;
-	border-color: #4a4a4a;
-	border: 2px solid #4a4a4a;
+	background-color: #35393F;
+	border-color: #2F3136;
 }
 .darken {
 	background-color: #000000;
@@ -1165,7 +1116,7 @@ input.disabled {
 }
 
 .dropdown-extended ul li {
-	border-top-color: #555555;
+	border-top-color: #B9B9B9;
 }
 
 .dropdown-extended ul li:hover {
@@ -1182,25 +1133,25 @@ input.disabled {
 }
 
 .dropdown-extended .header {
-	background-color: #0a0a0a; /* Old browsers */ /* FF3.6+ */
+	background-color: #242629; /* Old browsers */ /* FF3.6+ */
 	background-image: none;
 }
 
 .dropdown .pointer {
-	border-color: #1a1a1a transparent;
+	border-color: #474B51 transparent;
 }
 
 .dropdown .pointer-inner {
-	border-color: #0a0a0a transparent;
+	border-color: #2b2f34 transparent;
 }
 
 .dropdown-extended .pointer-inner {
-	border-color: #0a0a0a transparent;
+	border-color: #242629 transparent;
 }
 
 .dropdown .dropdown-contents {
-	background-color: #1a1a1a;
-	border-color: #0a0a0a;
+	background-color: #474B51;
+	border-color: rgb(43,47,52);
 	box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -1209,18 +1160,18 @@ input.disabled {
 }
 
 .dropdown li, .dropdown li li {
-	border-color: #0a0a0a;
+	border-color: rgb(43,47,52);
 }
 
 .dropdown li.separator {
-	border-color: #0a0a0a;
+	border-color: rgb(43,47,52);
 }
 
 /* Notifications
 ---------------------------------------- */
 
 .notification_list p.notification-time {
-	color: #CCCCCC;
+	color: rgb(183,183,189);
 }
 
 li.notification-reported strong, li.notification-disapproved strong {
