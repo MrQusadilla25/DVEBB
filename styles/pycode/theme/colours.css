@@ -5,19 +5,24 @@ Colours and backgrounds for common.css
 
 html, body {
 	color: #FFFFFF;
-	background-color: #000000;
+	background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 50%, #0f1929 100%);
+	background-attachment: fixed;
+	min-height: 100vh;
 }
 
 h1 {
 	color: #FFFFFF;
+	text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+	letter-spacing: 1px;
 }
 
 h2 {
-	color: #FFFFFF;
+	color: #00d9ff;
+	text-shadow: 0 1px 4px rgba(0,217,255,0.3);
 }
 
 h3 {
-	border-bottom-color: #333333;
+	border-bottom-color: #00d9ff;
 	color: #FFFFFF;
 }
 
@@ -84,37 +89,48 @@ a:hover {
 /* Round cornered boxes and backgrounds
 ---------------------------------------- */
 .wrap {
-	background-color: #111111;
+	background-color: transparent;
+	box-shadow: none;
 }
 
 .headerbar, .forumbg {
-	background-color: #1a1a1a;
-	background-image: none;
+	background: linear-gradient(135deg, rgba(20,28,54,0.8) 0%, rgba(25,35,65,0.9) 100%);
+	backdrop-filter: blur(10px);
+	border: 1px solid rgba(0, 217, 255, 0.2);
+	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+	border-radius: 8px !important;
 }
 
 .forumbg2 {
 	color: #FFFFFF;
-	background-color: #0a0a0a;
-	background-image: none;
-	margin-bottom: 4px;
-    padding: 5px;
+	background: linear-gradient(135deg, rgba(25,35,65,0.6) 0%, rgba(20,30,55,0.7) 100%);
+	border: 1px solid rgba(0, 217, 255, 0.15);
+	margin-bottom: 12px;
+    padding: 12px;
     clear: both;
-    border-radius: 3px;
+    border-radius: 8px;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
 .forabg {
-	background-color: #0a0a0a;
-	background-image: none;
-	border-radius: 3px;
+	background: linear-gradient(135deg, rgba(20,28,54,0.8) 0%, rgba(25,35,65,0.9) 100%);
+	border: 1px solid rgba(0, 217, 255, 0.2);
+	border-radius: 8px;
+	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
 .navbar {
-	background-color: #1a1a1a;
+	background: linear-gradient(90deg, rgba(30,40,70,0.95) 0%, rgba(35,50,85,0.9) 100%);
+	border-bottom: 2px solid rgba(0, 217, 255, 0.3);
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
 }
 
 .panel {
-	background-color: #1a1a1a;
+	background: linear-gradient(135deg, rgba(25,35,65,0.7) 0%, rgba(20,30,55,0.8) 100%);
+	border: 1px solid rgba(0, 217, 255, 0.2);
 	color: #FFFFFF;
+	border-radius: 8px;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
 .post:target .content {
@@ -928,9 +944,30 @@ Colours and backgrounds for forms.css
 /* General form styles
 ----------------------------------------*/
 select {
-	border-color: #0a0a0a;
-    background-color: #0f0f0f;
-    color: #CCCCCC;
+	border-color: #4a4a4a;
+    background-color: #252525;
+    color: #FFFFFF;
+	border: 2px solid #4a4a4a;
+	border-radius: 4px;
+	padding: 4px 6px;
+	transition: border-color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+select:hover {
+	border-color: #5a7a9e;
+	background-color: #2a2a2a;
+}
+
+select:focus {
+	border-color: #5a7a9e;
+	background-color: #2a2a2a;
+	box-shadow: inset 0 0 5px rgba(90, 122, 158, 0.5), 0 0 8px rgba(90, 122, 158, 0.3);
+	outline: none;
+}
+
+option {
+	background-color: #252525;
+	color: #FFFFFF;
 }
 
 label {
@@ -984,53 +1021,58 @@ fieldset.quick-login input.inputbox {
 ---------------------------------------- */
 textarea {
 	color: #FFFFFF;
-    background-color: #0f0f0f;
-	border: 1px solid #555555;
-    border-radius: 2px;
+    background-color: #252525;
+    border: 2px solid #4a4a4a;
+    border-radius: 4px;
     outline: 0;
 	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
 textarea:hover {
-	border: 1px solid #888888;
+	border: 2px solid #5a7a9e;
 	background-color: #2a2a2a;
+	box-shadow: inset 0 0 3px rgba(90, 122, 158, 0.3);
 	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
 textarea:focus {
-	border: 1px solid #CCCCCC;
+	color: #FFFFFF;
+	border: 2px solid #5a7a9e;
 	background-color: #2a2a2a;
+	box-shadow: inset 0 0 5px rgba(90, 122, 158, 0.5), 0 0 8px rgba(90, 122, 158, 0.3);
 	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
 .inputbox {
 	color: #FFFFFF;
-    background-color: #1a1a1a;
-	border: 1px solid #555555;
-    border-radius: 2px;
+    background-color: #252525;
+    border: 2px solid #4a4a4a;
+    border-radius: 4px;
     outline: 0;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
 .inputbox:-moz-placeholder {
-	color: #888888;
+	color: #999999;
 }
 
 .inputbox::-webkit-input-placeholder {
-	color: #888888;
+	color: #999999;
 }
 
 .inputbox:hover {
 	color: #FFFFFF;
-	border: 1px solid #888888;
+	border: 2px solid #5a7a9e;
 	background-color: #2a2a2a;
+	box-shadow: inset 0 0 3px rgba(90, 122, 158, 0.3);
 	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
 .inputbox:focus {
 	color: #FFFFFF;
-	border: 1px solid #CCCCCC;
+	border: 2px solid #5a7a9e;
 	background-color: #2a2a2a;
+	box-shadow: inset 0 0 5px rgba(90, 122, 158, 0.5), 0 0 8px rgba(90, 122, 158, 0.3);
 	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
@@ -1048,15 +1090,16 @@ textarea:focus {
 
 a.button1, input.button1, input.button3, a.button2, input.button2 {
 	background-image: none;
-	color: #CCCCCC;
+	color: #FFFFFF;
     text-decoration: none;
-    background-color: #1a1a1a;
-    border-color: #0a0a0a;
-    border-width: 1px 1px 4px 1px;
-    border-radius: 2px !important;
-    padding: 3px 5px 1px 5px;
-    font-weight: normal;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    background-color: #3a5578;
+    border-color: #2a4068;
+    border-width: 2px;
+    border-radius: 4px !important;
+    padding: 6px 10px 5px 10px;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 a.button1, input.button1 {
@@ -1081,26 +1124,36 @@ a.button1, a.button2 {
 a.button1:hover, input.button1:hover, a.button2:hover, input.button2:hover, input.button3:hover {
 	color: #FFFFFF;
 	background-image: none;
-	background-color: #2a2a2a;
-    border-color: #0a0a0a;
-	border-width: 1px 1px 4px 1px;
-	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+	background-color: #4a6588;
+    border-color: #5a7a9e;
+	border-width: 2px;
+	transition: all 0.2s ease-in-out;
+	box-shadow: 0 3px 6px rgba(90, 122, 158, 0.5);
+	cursor: pointer;
 }
 
 /* Focus states */
 input.button1:focus, input.button2:focus, input.button3:focus {
-
+	outline: none;
+	border-color: #5a7a9e;
+	box-shadow: 0 0 8px rgba(90, 122, 158, 0.7), inset 0 0 3px rgba(90, 122, 158, 0.5);
 }
 
 input.disabled {
-	color: #333333;
+	color: #666666;
+	background-color: #1a1a1a;
+	border-color: #333333;
+	box-shadow: none;
+	cursor: not-allowed;
+	opacity: 0.6;
 }
 
 /* jQuery popups
 ---------------------------------------- */
 .phpbb_alert {
-	background-color: #0f0f0f;
-	border-color: #0a0a0a;
+	background-color: #252525;
+	border-color: #4a4a4a;
+	border: 2px solid #4a4a4a;
 }
 .darken {
 	background-color: #000000;
