@@ -5,7 +5,7 @@ Colours and backgrounds for common.css
 
 html, body {
 	color: rgb(193,193,199);
-	background-color: #2a2f34;
+	background-color: #0c0e0f;
 }
 
 h1 {
@@ -17,7 +17,7 @@ h2 {
 }
 
 h3 {
-	border-bottom-color: #42474F;
+	border-bottom-color: #3a3a3a;
 	color: rgb(193,193,199);
 }
 
