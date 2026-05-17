@@ -5,19 +5,24 @@ Colours and backgrounds for common.css
 
 html, body {
 	color: #FFFFFF;
-	background-color: #000000;
+	background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 50%, #0f1929 100%);
+	background-attachment: fixed;
+	min-height: 100vh;
 }
 
 h1 {
 	color: #FFFFFF;
+	text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+	letter-spacing: 1px;
 }
 
 h2 {
-	color: #FFFFFF;
+	color: #00d9ff;
+	text-shadow: 0 1px 4px rgba(0,217,255,0.3);
 }
 
 h3 {
-	border-bottom-color: #333333;
+	border-bottom-color: #00d9ff;
 	color: #FFFFFF;
 }
 
@@ -31,10 +36,15 @@ hr {
 Colours and backgrounds for links.css
 -------------------------------------------------------------- */
 
-a { color: #CCCCCC; }
+a { 
+	color: #00d9ff;
+	text-shadow: 0 0 8px rgba(0, 217, 255, 0.3);
+	transition: all 0.2s ease;
+}
 a:hover { 
 	text-decoration: underline;
-	color: #FFFFFF; 
+	color: #00e5ff;
+	text-shadow: 0 0 12px rgba(0, 217, 255, 0.6);
 }
 
 /* Links on gradient backgrounds */
@@ -53,18 +63,18 @@ a:hover {
 
 /* Post body links */
 .postlink {
-	border-bottom-color: #888888;
-	color: #888888;
+	border-bottom-color: #00d9ff;
+	color: #00d9ff;
 }
 
 .postlink:visited {
-	border-bottom-color: #666666;
-	color: #666666;
+	border-bottom-color: #0088ff;
+	color: #0088ff;
 }
 
 .postlink:hover {
-	background-color: #333333;
-	color: #FFFFFF;
+	background-color: rgba(0, 217, 255, 0.1);
+	color: #00e5ff;
 }
 
 .signature a, .signature a:hover {
@@ -73,7 +83,7 @@ a:hover {
 
 /* Back to top of page */
 .top i {
-	color: #999999;
+	color: #00d9ff;
 }
 
 /* Arrow links  */
@@ -84,41 +94,48 @@ a:hover {
 /* Round cornered boxes and backgrounds
 ---------------------------------------- */
 .wrap {
-	background-color: #111111;
-}
-
-.headerbar {
-	color: #FFFFFF;
+	background-color: transparent;
+	box-shadow: none;
 }
 
 .headerbar, .forumbg {
-	background-color: #1a1a1a;
-	background-image: none;
+	background: linear-gradient(135deg, rgba(20,28,54,0.8) 0%, rgba(25,35,65,0.9) 100%);
+	backdrop-filter: blur(10px);
+	border: 1px solid rgba(0, 217, 255, 0.2);
+	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+	border-radius: 8px !important;
 }
 
 .forumbg2 {
 	color: #FFFFFF;
-	background-color: #0a0a0a;
-	background-image: none;
-	margin-bottom: 4px;
-    padding: 5px;
+	background: linear-gradient(135deg, rgba(25,35,65,0.6) 0%, rgba(20,30,55,0.7) 100%);
+	border: 1px solid rgba(0, 217, 255, 0.15);
+	margin-bottom: 12px;
+    padding: 12px;
     clear: both;
-    border-radius: 3px;
+    border-radius: 8px;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
 .forabg {
-	background-color: #0a0a0a;
-	background-image: none;
-	border-radius: 3px;
+	background: linear-gradient(135deg, rgba(20,28,54,0.8) 0%, rgba(25,35,65,0.9) 100%);
+	border: 1px solid rgba(0, 217, 255, 0.2);
+	border-radius: 8px;
+	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
 .navbar {
-	background-color: #1a1a1a;
+	background: linear-gradient(90deg, rgba(30,40,70,0.95) 0%, rgba(35,50,85,0.9) 100%);
+	border-bottom: 2px solid rgba(0, 217, 255, 0.3);
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
 }
 
 .panel {
-	background-color: #1a1a1a;
+	background: linear-gradient(135deg, rgba(25,35,65,0.7) 0%, rgba(20,30,55,0.8) 100%);
+	border: 1px solid rgba(0, 217, 255, 0.2);
 	color: #FFFFFF;
+	border-radius: 8px;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
 .post:target .content {
@@ -932,34 +949,38 @@ Colours and backgrounds for forms.css
 /* General form styles
 ----------------------------------------*/
 select {
-	border-color: #4a4a4a;
-    background-color: #252525;
+	border-color: rgba(0, 217, 255, 0.3);
+    background: linear-gradient(135deg, rgba(30,40,65,0.5) 0%, rgba(25,35,60,0.6) 100%);
     color: #FFFFFF;
-	border: 2px solid #4a4a4a;
-	border-radius: 4px;
-	padding: 4px 6px;
-	transition: border-color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+	border: 2px solid rgba(0, 217, 255, 0.3);
+	border-radius: 8px;
+	padding: 8px 10px;
+	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	backdrop-filter: blur(5px);
 }
 
 select:hover {
-	border-color: #5a7a9e;
-	background-color: #2a2a2a;
+	border-color: rgba(0, 217, 255, 0.6);
+	background: linear-gradient(135deg, rgba(35,50,75,0.6) 0%, rgba(30,45,70,0.7) 100%);
+	box-shadow: 0 0 16px rgba(0, 217, 255, 0.1);
 }
 
 select:focus {
-	border-color: #5a7a9e;
-	background-color: #2a2a2a;
-	box-shadow: inset 0 0 5px rgba(90, 122, 158, 0.5), 0 0 8px rgba(90, 122, 158, 0.3);
+	border-color: rgba(0, 217, 255, 0.9);
+	background: linear-gradient(135deg, rgba(35,50,75,0.7) 0%, rgba(30,45,70,0.8) 100%);
+	box-shadow: inset 0 0 12px rgba(0, 217, 255, 0.3), 0 0 24px rgba(0, 217, 255, 0.2);
 	outline: none;
 }
 
 option {
-	background-color: #252525;
+	background: linear-gradient(135deg, rgba(30,40,65,0.8) 0%, rgba(25,35,60,0.9) 100%);
 	color: #FFFFFF;
 }
 
 label {
 	color: #FFFFFF;
+	font-weight: 500;
+	letter-spacing: 0.5px;
 }
 
 option.disabled-option {
@@ -1009,59 +1030,57 @@ fieldset.quick-login input.inputbox {
 ---------------------------------------- */
 textarea {
 	color: #FFFFFF;
-    background-color: #252525;
-    border: 2px solid #4a4a4a;
-    border-radius: 4px;
+    background: linear-gradient(135deg, rgba(30,40,65,0.5) 0%, rgba(25,35,60,0.6) 100%);
+    border: 2px solid rgba(0, 217, 255, 0.3);
+    border-radius: 8px;
     outline: 0;
-	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+	backdrop-filter: blur(5px);
+	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 textarea:hover {
-	border: 2px solid #5a7a9e;
-	background-color: #2a2a2a;
-	box-shadow: inset 0 0 3px rgba(90, 122, 158, 0.3);
-	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+	border: 2px solid rgba(0, 217, 255, 0.6);
+	background: linear-gradient(135deg, rgba(35,50,75,0.6) 0%, rgba(30,45,70,0.7) 100%);
+	box-shadow: inset 0 0 8px rgba(0, 217, 255, 0.2), 0 0 16px rgba(0, 217, 255, 0.1);
 }
 
 textarea:focus {
 	color: #FFFFFF;
-	border: 2px solid #5a7a9e;
-	background-color: #2a2a2a;
-	box-shadow: inset 0 0 5px rgba(90, 122, 158, 0.5), 0 0 8px rgba(90, 122, 158, 0.3);
-	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+	border: 2px solid rgba(0, 217, 255, 0.9);
+	background: linear-gradient(135deg, rgba(35,50,75,0.7) 0%, rgba(30,45,70,0.8) 100%);
+	box-shadow: inset 0 0 12px rgba(0, 217, 255, 0.3), 0 0 24px rgba(0, 217, 255, 0.2);
 }
 
 .inputbox {
 	color: #FFFFFF;
-    background-color: #252525;
-    border: 2px solid #4a4a4a;
-    border-radius: 4px;
+    background: linear-gradient(135deg, rgba(30,40,65,0.5) 0%, rgba(25,35,60,0.6) 100%);
+    border: 2px solid rgba(0, 217, 255, 0.3);
+    border-radius: 8px;
     outline: 0;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+	backdrop-filter: blur(5px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .inputbox:-moz-placeholder {
-	color: #999999;
+	color: #888888;
 }
 
 .inputbox::-webkit-input-placeholder {
-	color: #999999;
+	color: #888888;
 }
 
 .inputbox:hover {
 	color: #FFFFFF;
-	border: 2px solid #5a7a9e;
-	background-color: #2a2a2a;
-	box-shadow: inset 0 0 3px rgba(90, 122, 158, 0.3);
-	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+	border: 2px solid rgba(0, 217, 255, 0.6);
+	background: linear-gradient(135deg, rgba(35,50,75,0.6) 0%, rgba(30,45,70,0.7) 100%);
+	box-shadow: inset 0 0 8px rgba(0, 217, 255, 0.2), 0 0 16px rgba(0, 217, 255, 0.1);
 }
 
 .inputbox:focus {
 	color: #FFFFFF;
-	border: 2px solid #5a7a9e;
-	background-color: #2a2a2a;
-	box-shadow: inset 0 0 5px rgba(90, 122, 158, 0.5), 0 0 8px rgba(90, 122, 158, 0.3);
-	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+	border: 2px solid rgba(0, 217, 255, 0.9);
+	background: linear-gradient(135deg, rgba(35,50,75,0.7) 0%, rgba(30,45,70,0.8) 100%);
+	box-shadow: inset 0 0 12px rgba(0, 217, 255, 0.3), 0 0 24px rgba(0, 217, 255, 0.2);
 }
 
 .inputbox:focus:-moz-placeholder {
@@ -1080,14 +1099,19 @@ a.button1, input.button1, input.button3, a.button2, input.button2 {
 	background-image: none;
 	color: #FFFFFF;
     text-decoration: none;
-    background-color: #3a5578;
-    border-color: #2a4068;
-    border-width: 2px;
-    border-radius: 4px !important;
-    padding: 6px 10px 5px 10px;
-    font-weight: 600;
-    transition: all 0.2s ease-in-out;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(135deg, #00d9ff 0%, #0088ff 100%);
+    border: none;
+    border-width: 0;
+    border-radius: 8px !important;
+    padding: 12px 24px;
+    font-weight: 700;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	box-shadow: 0 8px 24px rgba(0, 217, 255, 0.3);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 0.95em;
+	display: inline-block;
+	cursor: pointer;
 }
 
 a.button1, input.button1 {
@@ -1112,36 +1136,39 @@ a.button1, a.button2 {
 a.button1:hover, input.button1:hover, a.button2:hover, input.button2:hover, input.button3:hover {
 	color: #FFFFFF;
 	background-image: none;
-	background-color: #4a6588;
-    border-color: #5a7a9e;
-	border-width: 2px;
-	transition: all 0.2s ease-in-out;
-	box-shadow: 0 3px 6px rgba(90, 122, 158, 0.5);
+	background: linear-gradient(135deg, #00e5ff 0%, #00a8ff 100%);
+    border: none;
+	border-width: 0;
+	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	box-shadow: 0 12px 32px rgba(0, 217, 255, 0.4);
+	transform: translateY(-2px);
 	cursor: pointer;
 }
 
 /* Focus states */
 input.button1:focus, input.button2:focus, input.button3:focus {
 	outline: none;
-	border-color: #5a7a9e;
-	box-shadow: 0 0 8px rgba(90, 122, 158, 0.7), inset 0 0 3px rgba(90, 122, 158, 0.5);
+	box-shadow: 0 12px 32px rgba(0, 217, 255, 0.5), inset 0 0 8px rgba(0, 217, 255, 0.3);
+	transform: translateY(-2px);
 }
 
 input.disabled {
 	color: #666666;
-	background-color: #1a1a1a;
-	border-color: #333333;
+	background: #333333;
+	border: none;
 	box-shadow: none;
 	cursor: not-allowed;
-	opacity: 0.6;
+	opacity: 0.5;
+	transform: none;
 }
 
 /* jQuery popups
 ---------------------------------------- */
 .phpbb_alert {
-	background-color: #252525;
-	border-color: #4a4a4a;
-	border: 2px solid #4a4a4a;
+	background: linear-gradient(135deg, rgba(30,40,65,0.8) 0%, rgba(25,35,60,0.9) 100%);
+	border: 2px solid rgba(0, 217, 255, 0.3);
+	border-radius: 8px;
+	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 .darken {
 	background-color: #000000;

@@ -1,0 +1,481 @@
+/* Modern UI Enhancements for PyCode Theme
+   ============================================================ */
+
+/* Modern Typography
+   ============================================================ */
+body {
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	letter-spacing: 0.3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+	letter-spacing: 0.5px;
+}
+
+p {
+	line-height: 1.7;
+	letter-spacing: 0.3px;
+}
+
+/* Modern Cards & Panels
+   ============================================================ */
+.panel, .forabg, .forumbg, .postbody {
+	border: 1px solid rgba(0, 217, 255, 0.15);
+	border-radius: 12px;
+	overflow: hidden;
+	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.panel:hover, .forabg:hover, .forumbg:hover {
+	border-color: rgba(0, 217, 255, 0.4);
+	box-shadow: 0 12px 40px rgba(0, 217, 255, 0.15);
+}
+
+/* Modern Navigation
+   ============================================================ */
+.navbar a {
+	padding: 12px 18px;
+	transition: all 0.2s ease;
+	border-radius: 8px;
+	margin: 4px 2px;
+	position: relative;
+	overflow: hidden;
+}
+
+.navbar a::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(90deg, transparent, rgba(0, 217, 255, 0.2), transparent);
+	transition: left 0.3s ease;
+	z-index: -1;
+}
+
+.navbar a:hover::before {
+	left: 100%;
+}
+
+.navbar a:hover {
+	background: rgba(0, 217, 255, 0.1);
+	color: #00e5ff;
+	text-shadow: 0 0 8px rgba(0, 217, 255, 0.5);
+}
+
+/* Modern Form Elements
+   ============================================================ */
+label {
+	display: block;
+	margin-bottom: 8px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 0.85em;
+	color: #00d9ff;
+}
+
+/* Input Focus Ring */
+input:focus,
+textarea:focus,
+select:focus {
+	outline: none !important;
+}
+
+/* Modern Status Indicators
+   ============================================================ */
+.status-online {
+	background: linear-gradient(135deg, #00ff88 0%, #00dd77 100%);
+	box-shadow: 0 0 16px rgba(0, 255, 136, 0.4);
+	border-radius: 50%;
+}
+
+.status-offline {
+	background: #555555;
+	box-shadow: 0 0 8px rgba(85, 85, 85, 0.3);
+	border-radius: 50%;
+}
+
+.status-busy {
+	background: linear-gradient(135deg, #ff4466 0%, #ff0044 100%);
+	box-shadow: 0 0 16px rgba(255, 68, 102, 0.4);
+	border-radius: 50%;
+}
+
+/* Modern Badges
+   ============================================================ */
+.badge, .label {
+	display: inline-block;
+	padding: 6px 12px;
+	border-radius: 20px;
+	font-weight: 700;
+	font-size: 0.75em;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	background: linear-gradient(135deg, #00d9ff 0%, #0088ff 100%);
+	box-shadow: 0 4px 12px rgba(0, 217, 255, 0.3);
+	transition: all 0.2s ease;
+}
+
+.badge:hover, .label:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 6px 16px rgba(0, 217, 255, 0.4);
+}
+
+/* Modern Post Headers
+   ============================================================ */
+.post h3 {
+	font-size: 1.3em;
+	margin-bottom: 12px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid rgba(0, 217, 255, 0.2);
+}
+
+.post h3 a {
+	transition: all 0.2s ease;
+}
+
+.post h3 a:hover {
+	color: #00e5ff;
+	text-shadow: 0 0 16px rgba(0, 217, 255, 0.6);
+}
+
+/* Modern Dividers
+   ============================================================ */
+hr {
+	background: linear-gradient(90deg, transparent, rgba(0, 217, 255, 0.3), transparent);
+	border: none;
+	height: 1px;
+	margin: 20px 0;
+}
+
+/* Modern Lists
+   ============================================================ */
+ul, ol {
+	margin: 16px 0;
+}
+
+li {
+	margin: 8px 0;
+	line-height: 1.8;
+}
+
+ul li::marker {
+	color: #00d9ff;
+	font-weight: bold;
+}
+
+ol li::marker {
+	color: #00d9ff;
+	font-weight: bold;
+}
+
+/* Modern Tables
+   ============================================================ */
+table {
+	border-collapse: collapse;
+	width: 100%;
+	margin: 16px 0;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+table thead {
+	background: linear-gradient(135deg, rgba(0, 217, 255, 0.2) 0%, rgba(0, 136, 255, 0.1) 100%);
+	border-bottom: 2px solid rgba(0, 217, 255, 0.3);
+}
+
+table thead th {
+	padding: 14px;
+	font-weight: 700;
+	text-align: left;
+	color: #00d9ff;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	font-size: 0.9em;
+}
+
+table tbody td {
+	padding: 12px 14px;
+	border-bottom: 1px solid rgba(0, 217, 255, 0.1);
+	transition: all 0.2s ease;
+}
+
+table tbody tr:hover {
+	background: rgba(0, 217, 255, 0.05);
+}
+
+table tbody tr:last-child td {
+	border-bottom: none;
+}
+
+/* Modern Pagination
+   ============================================================ */
+.pagination {
+	display: flex;
+	gap: 8px;
+	justify-content: center;
+	margin: 20px 0;
+	flex-wrap: wrap;
+}
+
+.pagination li {
+	list-style: none;
+}
+
+.pagination a,
+.pagination span {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 40px;
+	height: 40px;
+	padding: 0 12px;
+	border-radius: 8px;
+	text-decoration: none;
+	color: #00d9ff;
+	background: rgba(0, 217, 255, 0.1);
+	transition: all 0.2s ease;
+	font-weight: 600;
+	border: 1px solid rgba(0, 217, 255, 0.2);
+}
+
+.pagination a:hover {
+	background: linear-gradient(135deg, #00d9ff 0%, #0088ff 100%);
+	color: #ffffff;
+	box-shadow: 0 4px 12px rgba(0, 217, 255, 0.3);
+	transform: translateY(-2px);
+}
+
+.pagination .active a,
+.pagination .current {
+	background: linear-gradient(135deg, #00d9ff 0%, #0088ff 100%);
+	color: #ffffff;
+	box-shadow: 0 4px 12px rgba(0, 217, 255, 0.3);
+}
+
+/* Modern Quotes
+   ============================================================ */
+blockquote {
+	background: linear-gradient(135deg, rgba(0, 217, 255, 0.05) 0%, rgba(0, 136, 255, 0.02) 100%);
+	border-left: 4px solid #00d9ff;
+	border-radius: 0 8px 8px 0;
+	padding: 14px 18px;
+	margin: 16px 0;
+	font-style: italic;
+	color: #d0d0d0;
+}
+
+.quote-title {
+	color: #00d9ff;
+	font-weight: 700;
+	margin-bottom: 8px;
+	text-transform: uppercase;
+	font-size: 0.9em;
+	letter-spacing: 0.5px;
+}
+
+/* Modern Code Blocks
+   ============================================================ */
+code, pre {
+	background: linear-gradient(135deg, rgba(0, 40, 80, 0.4) 0%, rgba(0, 20, 50, 0.5) 100%);
+	border: 1px solid rgba(0, 217, 255, 0.2);
+	border-radius: 8px;
+	padding: 2px 8px;
+	color: #00ff88;
+	font-family: 'Courier New', 'Consolas', monospace;
+	font-size: 0.9em;
+	text-shadow: 0 0 8px rgba(0, 255, 136, 0.2);
+}
+
+pre {
+	padding: 16px;
+	margin: 16px 0;
+	overflow-x: auto;
+	line-height: 1.5;
+	box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Modern Alerts
+   ============================================================ */
+.alert-success {
+	background: linear-gradient(135deg, rgba(0, 200, 100, 0.15) 0%, rgba(0, 160, 80, 0.1) 100%);
+	border: 2px solid #00ff88;
+	border-radius: 8px;
+	color: #88ffcc;
+}
+
+.alert-error,
+.alert-danger {
+	background: linear-gradient(135deg, rgba(255, 70, 100, 0.15) 0%, rgba(200, 50, 80, 0.1) 100%);
+	border: 2px solid #ff4466;
+	border-radius: 8px;
+	color: #ffaacc;
+}
+
+.alert-warning {
+	background: linear-gradient(135deg, rgba(255, 200, 0, 0.15) 0%, rgba(255, 150, 0, 0.1) 100%);
+	border: 2px solid #ffd700;
+	border-radius: 8px;
+	color: #ffe680;
+}
+
+.alert-info {
+	background: linear-gradient(135deg, rgba(0, 180, 255, 0.15) 0%, rgba(0, 100, 200, 0.1) 100%);
+	border: 2px solid #00d9ff;
+	border-radius: 8px;
+	color: #88d9ff;
+}
+
+/* Modern Topic Icons
+   ============================================================ */
+.topicicon {
+	filter: drop-shadow(0 0 8px rgba(0, 217, 255, 0.3));
+	transition: all 0.2s ease;
+}
+
+.topicicon:hover {
+	filter: drop-shadow(0 0 12px rgba(0, 217, 255, 0.6));
+	transform: scale(1.1);
+}
+
+/* Modern Author Info
+   ============================================================ */
+.postprofile {
+	background: linear-gradient(135deg, rgba(0, 217, 255, 0.05) 0%, rgba(0, 136, 255, 0.02) 100%);
+	border-radius: 8px;
+	padding: 14px;
+	border: 1px solid rgba(0, 217, 255, 0.1);
+}
+
+.postprofile dt {
+	color: #00d9ff;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 0.9em;
+	letter-spacing: 0.5px;
+	margin: 8px 0;
+}
+
+.postprofile dd {
+	color: #d0d0d0;
+	margin: 4px 0;
+	line-height: 1.6;
+}
+
+/* Modern Avatar
+   ============================================================ */
+.avatar {
+	border-radius: 12px;
+	border: 2px solid rgba(0, 217, 255, 0.3);
+	box-shadow: 0 8px 16px rgba(0, 217, 255, 0.2);
+	transition: all 0.2s ease;
+}
+
+.avatar:hover {
+	border-color: rgba(0, 217, 255, 0.6);
+	box-shadow: 0 12px 24px rgba(0, 217, 255, 0.3);
+	transform: scale(1.05);
+}
+
+/* Smooth Transitions
+   ============================================================ */
+* {
+	transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+button, a.button, input[type="button"], input[type="submit"] {
+	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Animation for loading
+   ============================================================ */
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+	0%, 100% { opacity: 1; }
+	50% { opacity: 0.5; }
+}
+
+.loading {
+	animation: spin 1s linear infinite;
+}
+
+.pulse {
+	animation: pulse 2s ease-in-out infinite;
+}
+
+/* Shadow Depths
+   ============================================================ */
+.shadow-sm {
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.shadow {
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.shadow-lg {
+	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.shadow-xl {
+	box-shadow: 0 12px 48px rgba(0, 0, 0, 0.5);
+}
+
+/* Glow Effects
+   ============================================================ */
+.glow {
+	text-shadow: 0 0 8px rgba(0, 217, 255, 0.6);
+	filter: drop-shadow(0 0 8px rgba(0, 217, 255, 0.4));
+}
+
+.glow-lg {
+	text-shadow: 0 0 16px rgba(0, 217, 255, 0.8);
+	filter: drop-shadow(0 0 16px rgba(0, 217, 255, 0.6));
+}
+
+/* Gradient Text
+   ============================================================ */
+.gradient-text {
+	background: linear-gradient(135deg, #00d9ff 0%, #0088ff 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+/* Focus Visible (Accessibility)
+   ============================================================ */
+*:focus-visible {
+	outline: 2px solid #00d9ff;
+	outline-offset: 2px;
+}
+
+/* Responsive Design Enhancements
+   ============================================================ */
+@media (max-width: 768px) {
+	h1 { font-size: 1.8em; }
+	h2 { font-size: 1.4em; }
+	h3 { font-size: 1.1em; }
+
+	.panel, .forabg, .forumbg {
+		border-radius: 8px;
+	}
+
+	label {
+		font-size: 0.8em;
+	}
+
+	table thead th,
+	table tbody td {
+		padding: 10px;
+	}
+}
